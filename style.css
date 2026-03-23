@@ -1,16 +1,43 @@
         /* --- Variables and Global Styles --- */
-        :root {
-            --primary-blue: #2c3e50; /* أزرق هادئ */
-            --secondary-gray: #ecf0f1; /* رمادي فاتح */
-            --text-color: #34495e; /* رمادي داكن للنصوص */
-            --white-color: #ffffff;
-            --accent-gold: #c5b358; /* لمسة ذهبية */
-            --light-warning: #f39c12; /* برتقالي خفيف للمعوقات */
-            --font-family: 'Cairo', sans-serif;
-            --section-padding: 60px 0;
-            --container-width: 90%;
-            --max-width: 1100px;
-        }
+      :root {
+    /* الألوان الأساسية (مستوحاة من Sky Blue Theme - Dark Mode كافتراضي) */
+    --primary-blue: #080f14;       /* الخلفية الأساسية الداكنة */
+    --secondary-gray: #0d171e;     /* الخلفية الثانوية */
+    --bg-card: #111d26;            /* خلفية البطاقات */
+    
+    /* نصوص الألوان */
+    --text-color: #e0f0ff;         /* أبيض ثلجي للنصوص الرئيسية */
+    --text-secondary: #8ba5b8;     /* رمادي مزرق للنصوص الثانوية */
+    --white-color: #ffffff;
+    
+    /* ألوان التميز والتأكيد (Accent) */
+    --accent-blue: #38bdf8;        /* السماوي الساطع بدلاً من الذهبي */
+    --accent-gold: #38bdf8;        /* تم استبدال الذهبي بالسماوي لتوحيد الهوية */
+    --light-warning: #0284c7;      /* أزرق أعمق للتنبيهات أو العناصر المميزة */
+    
+    /* الشفافيات والحدود */
+    --border-color: rgba(56, 189, 248, 0.15);
+    --accent-glow: rgba(56, 189, 248, 0.25);
+    
+    /* الإعدادات الهيكلية (كما هي في طلبك) */
+    --font-family: 'Cairo', sans-serif;
+    --section-padding: 60px 0;
+    --container-width: 90%;
+    --max-width: 1100px;
+    --transition: 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --radius: 2px;
+}
+
+/* إذا كنت تستخدم الـ Light Mode في صفحتك، يمكنك إضافة هذا الجزء أيضاً */
+[data-theme="light"] {
+    --primary-blue: #f0f6fa;
+    --secondary-gray: #e1edf5;
+    --bg-card: #ffffff;
+    --text-color: #0f172a;
+    --text-secondary: #475569;
+    --accent-blue: #0284c7;
+    --border-color: rgba(2, 132, 199, 0.20);
+}
 
         * {
             margin: 0;
